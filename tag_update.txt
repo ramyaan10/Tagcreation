@@ -1,0 +1,23 @@
+" HELLO WELCOME TO GITHUB "
+
+
+
+1 git clone git clone https://github.com/ramyaan10/Demoproject
+
+2.checkout to main branch
+
+3.replace it with new tag using shell scripts
+
+        if [ $DELETE_OLD_TAG == true ];then
+                    git push --delete origin $TAG_NAME
+                    git tag -d $TAG_NAME
+        fi
+ 4. git checkout branchname
+        sed -i -e 's/'$PREVIOUS_TAG_NAME'/'$TAG_NAME'/g' file path
+        
+        git add filepath
+        git commit -m "Updated New Platform Tag in release manifest."
+        git push --force origin main branchname
+        git tag newtagname
+        git push --force origin --tags
+        cd ..
